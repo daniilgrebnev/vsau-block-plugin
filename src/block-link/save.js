@@ -11,7 +11,10 @@ export default function save({ attributes }) {
 				className: `block-link_content ${blockType}`,
 			})}
 		>
-			<p>{text}</p>
+			<Icon width={18} fill={blockType === "white" ? "#0f91d6" : "#fff"} />
+			<p style={{ color: blockType === "white" ? "#0f91d6" : "#fff" }}>
+				{text}
+			</p>
 		</a>
 	);
 }
