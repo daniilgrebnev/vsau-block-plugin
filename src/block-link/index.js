@@ -4,7 +4,7 @@ import "./common.scss";
 import "./editor.scss";
 import "./style.scss";
 
-import save from "../block-text/save";
+import save from "../block-link/save";
 import metadata from "./block.json";
 import Edit from "./edit";
 
