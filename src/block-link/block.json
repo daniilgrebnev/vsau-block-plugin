@@ -10,7 +10,7 @@
 	"attributes": {
 		"text": {
 			"type": "string",
-			"source": "html",
+			"source": "attribute",
 			"selector": "a"
 		},
 		"url": {
@@ -22,6 +22,10 @@
 		"blockType": {
 			"type": "string",
 			"default": "blue"
+		},
+		"withIcon": {
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"example": {},

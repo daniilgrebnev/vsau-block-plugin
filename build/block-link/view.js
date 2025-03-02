@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{document.querySelectorAll(".block-link_content").forEach((e=>{e.addEventListener("mouseenter",(()=>{e.style.color="#ff0000"})),e.addEventListener("mouseleave",(()=>{e.style.color=""}))}))}));

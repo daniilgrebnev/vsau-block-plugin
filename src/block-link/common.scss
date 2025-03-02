@@ -14,7 +14,7 @@
 	cursor: pointer;
 	min-height: 100%;
 	flex: 1;
-	border-radius: 10px;
+	border-radius: 5px;
 	.link-admin {
 		display: flex;
 		align-items: center;
@@ -48,10 +48,4 @@
 			text-decoration: none;
 		}
 	}
-}
-.block-link_content:hover {
-	transform: scale(1.05);
-}
-.block-link_content:active {
-	transform: scale(0.9);
 }
