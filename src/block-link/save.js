@@ -6,7 +6,6 @@ import "./style.scss";
 
 export default function save({ attributes }) {
 	const { text, url, blockType, withIcon } = attributes;
-	console.log(attributes);
 
 	return (
 		<a

@@ -58,6 +58,7 @@ export default function Edit({ attributes, setAttributes }) {
 				multiline={false}
 				onChange={(value) => setAttributes({ text: value })}
 				placeholder={__("Текст ссылки")}
+				tagName="p"
 			/>
 		</div>
 	);

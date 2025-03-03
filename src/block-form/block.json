@@ -1,21 +1,20 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/block-text",
+	"name": "create-block/block-form",
 	"version": "0.1.0",
-	"title": "Текст новости",
+	"title": "Форма связи",
 	"category": "text",
-	"icon": "smiley",
+	"icon": "comments",
 	"description": "Example block scaffolded with Create Block tool.",
 	"example": {},
 	"supports": {
 		"html": false
 	},
 	"attributes": {
-		"content": {
+		"email": {
 			"type": "string",
-			"source": "html",
-			"selector": "div"
+			"default": "example@vsau.ru"
 		}
 	},
 	"textdomain": "vsau-blocks",

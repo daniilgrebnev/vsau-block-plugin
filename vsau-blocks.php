@@ -26,9 +26,9 @@ function vsau_blocks_enqueue_frontend_assets()
 	// Стили для блока "block-text"
 	wp_enqueue_style(
 		'vsau-blocks-text-style', // Хэндл стилей
-		plugins_url('build/block-text/index.css', __FILE__), // Путь к CSS-файлу
+		plugins_url('build/block-text/style-index.css', __FILE__), // Путь к CSS-файлу
 		array(), // Зависимости
-		filemtime(plugin_dir_path(__FILE__) . 'build/block-text/index.css') // Версия
+		filemtime(plugin_dir_path(__FILE__) . 'build/block-text/style-index.css') // Версия
 	);
 
 	// Стили для блока "block-link"
@@ -37,6 +37,21 @@ function vsau_blocks_enqueue_frontend_assets()
 		plugins_url('build/block-link/style-index.css', __FILE__), // Путь к CSS-файлу
 		array(), // Зависимости
 		filemtime(plugin_dir_path(__FILE__) . 'build/block-link/style-index.css') // Версия
+	);
+
+	// Стили для блока "block-form"
+	wp_enqueue_style(
+		'vsau-blocks-form-style', // Хэндл стилей
+		plugins_url('build/block-form/style-index.css', __FILE__), // Путь к CSS-файлу
+		array(), // Зависимости
+		filemtime(plugin_dir_path(__FILE__) . 'build/block-form/style-index.css') // Версия
+	);
+	wp_enqueue_script(
+		'vsau-blocks-form-script', // Хэндл скрипта
+		plugins_url('build/block-form/view.js', __FILE__), // Путь к JS-файлу
+		array(), // Зависимости
+		filemtime(plugin_dir_path(__FILE__) . 'build/block-form/view.js'), // Версия
+		false // async
 	);
 
 	// Скрипты для фронтенда (если нужны)
@@ -59,6 +74,12 @@ function create_block_vsau_blocks_block_init()
 	// Регистрируем блок "block-link"
 	register_block_type(__DIR__ . '/build/block-link', array(
 		'style'         => 'vsau-blocks-link-style', // Уникальный хэндл для стилей блока "block-link"
+		'editor_script' => 'vsau-blocks-editor-script',
+		'editor_style'  => 'vsau-blocks-editor-style',
+	));
+
+	register_block_type(__DIR__ . '/build/block-form', array(
+		'style'         => 'vsau-blocks-form-style', // Уникальный хэндл для стилей блока "block-form"
 		'editor_script' => 'vsau-blocks-editor-script',
 		'editor_style'  => 'vsau-blocks-editor-style',
 	));

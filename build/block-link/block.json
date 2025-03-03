@@ -10,14 +10,15 @@
   "attributes": {
     "text": {
       "type": "string",
-      "source": "attribute",
-      "selector": "a"
+      "source": "html",
+      "selector": "p"
     },
     "url": {
       "type": "string",
       "source": "attribute",
       "selector": "a",
-      "attribute": "href"
+      "attribute": "href",
+      "default": "www.vsau.ru"
     },
     "blockType": {
       "type": "string",

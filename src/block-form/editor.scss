@@ -1,0 +1,61 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.block_form_content_editor {
+	user-select: none;
+}
+.block_form_content {
+	background: rgb(241, 241, 241);
+	width: 100%;
+	border-radius: 5px;
+	padding: 50px;
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 20px;
+	h2 {
+		font-size: 24px;
+		font-weight: 600;
+		color: #000;
+		text-align: left;
+		width: 100%;
+	}
+	.block_form_content_disabled_input {
+		display: none !important;
+	}
+	input,
+	textarea {
+		border: none;
+		outline: none;
+		padding: 10px 20px;
+		background: rgba(0, 0, 0, 0.05);
+		color: rgba(0, 0, 0, 0.6);
+		display: block;
+		font-size: 18px;
+		border-radius: 10px;
+		width: 100%;
+		resize: none;
+	}
+	.block_form_content_button_container {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		width: 100%;
+		button {
+			padding: 10px 30px;
+			border-radius: 10px;
+			background: #0f91d6;
+			border: none;
+			outline: none;
+			color: white;
+			text-align: left;
+
+			opacity: 1;
+			transition: opacity 0.3s;
+		}
+	}
+}

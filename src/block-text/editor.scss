@@ -1,9 +1,6 @@
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
-
-.wp-block-create-block-vsau-blocks {
-	border: 1px dotted #f00;
+.block_text_content {
+	background: rgb(248, 247, 247);
+	width: 100%;
+	border-radius: 5px;
+	padding: 30px;
 }
