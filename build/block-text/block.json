@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "title": "Текст новости",
   "category": "text",
-  "icon": "smiley",
+  "icon": "html",
   "description": "Example block scaffolded with Create Block tool.",
   "example": {},
   "supports": {

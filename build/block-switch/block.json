@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/block-switch",
+  "version": "0.1.0",
+  "title": "Таблица",
+  "category": "text",
+  "icon": "table",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "tablePressId": {
+      "type": "string",
+      "default": "1"
+    },
+    "withHead": {
+      "type": "boolean",
+      "default": false
+    },
+    "headText": {
+      "type": "string",
+      "source": "html",
+      "selector": "h2",
+      "default": ""
+    }
+  },
+  "textdomain": "vsau-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

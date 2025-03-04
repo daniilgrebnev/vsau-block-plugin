@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "title": "Блок-ссылка",
   "category": "text",
-  "icon": "smiley",
+  "icon": "menu",
   "description": "Example block scaffolded with Create Block tool.",
   "attributes": {
     "text": {

@@ -54,8 +54,20 @@ function vsau_blocks_enqueue_frontend_assets()
 		false // async
 	);
 
-	// Скрипты для фронтенда (если нужны)
-
+	// Стили для блока "block-switch"
+	wp_enqueue_style(
+		'vsau-blocks-switch-style', // Хэндл стилей
+		plugins_url('build/block-switch/style-index.css', __FILE__), // Путь к CSS-файлу
+		array(), // Зависимости
+		filemtime(plugin_dir_path(__FILE__) . 'build/block-switch/style-index.css') // Версия
+	);
+	wp_enqueue_script(
+		'vsau-blocks-switch-script', // Хэндл скрипта
+		plugins_url('build/block-switch/view.js', __FILE__), // Путь к JS-файлу
+		array(), // Зависимости
+		filemtime(plugin_dir_path(__FILE__) . 'build/block-switch/view.js'), // Версия
+		false // async
+	);
 }
 add_action('wp_enqueue_scripts', 'vsau_blocks_enqueue_frontend_assets');
 
@@ -80,6 +92,11 @@ function create_block_vsau_blocks_block_init()
 
 	register_block_type(__DIR__ . '/build/block-form', array(
 		'style'         => 'vsau-blocks-form-style', // Уникальный хэндл для стилей блока "block-form"
+		'editor_script' => 'vsau-blocks-editor-script',
+		'editor_style'  => 'vsau-blocks-editor-style',
+	));
+	register_block_type(__DIR__ . '/build/block-switch', array(
+		'style'         => 'vsau-blocks-switch-style', // Уникальный хэндл для стилей блока "block-switch"
 		'editor_script' => 'vsau-blocks-editor-script',
 		'editor_style'  => 'vsau-blocks-editor-style',
 	));

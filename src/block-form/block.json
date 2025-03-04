@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "Форма связи",
 	"category": "text",
-	"icon": "comments",
+	"icon": "bell",
 	"description": "Example block scaffolded with Create Block tool.",
 	"example": {},
 	"supports": {
