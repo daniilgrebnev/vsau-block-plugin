@@ -66,7 +66,7 @@ const sendHandler = (data) => {
 	if (host === "localhost") {
 		url = "http://verba.gurgurich.ru/wp-json/abit/v1/email";
 	} else {
-		url = window.location.href + "/wp-json/abit/v1/email";
+		url = "https://www.vsau.ru/wp-json/abit/v1/email";
 	}
 
 	sendRequest(url, data);
