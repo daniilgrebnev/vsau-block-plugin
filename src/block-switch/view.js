@@ -1,13 +1,16 @@
 const init = () => {
-	const switchArr = document.getElementById("switch_arr");
-	console.log(switchArr);
+	const switchArr = document.querySelectorAll("#switch_arr");
+	const switch_hands = document.querySelectorAll("#switch_hand");
+
 	if (switchArr) {
-		switchArr.addEventListener("click", () => {
-			const switch_hand = document.getElementById("switch_hand");
-			if (switch_hand) {
-				switch_hand.classList.toggle("active");
-			}
-		});
+		switchArr.forEach((item, index) =>
+			item.addEventListener("click", () => {
+				const switch_hand = switch_hands[index];
+				if (switch_hand) {
+					switch_hand.classList.toggle("active");
+				}
+			}),
+		);
 	}
 };
 

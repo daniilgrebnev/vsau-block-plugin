@@ -6,9 +6,10 @@ export default function save({ attributes }) {
 			{/* Условный рендеринг для <h2> */}
 			{attributes.withHead && (
 				<div id="switch_arr" className="block_switch_content_head_container">
-					<h2 className="block_switch_content_head">
-						{attributes.headText || "Заголовок по умолчанию"}
-					</h2>
+					<h2
+						dangerouslySetInnerHTML={{ __html: attributes.headText }}
+						className="block_switch_content_head"
+					></h2>
 					<span>
 						<svg
 							width="14"
