@@ -18,13 +18,12 @@ export default function save({ attributes }) {
 			})}
 		>
 			{withIcon ? (
-				<div className="icon">
-					<Icon
-						fill={blockType === "white" ? "#0f91d6" : "#fff"}
-						width={20}
-						height={20}
-					/>
-				</div>
+				<Icon
+					className="icon"
+					fill={blockType === "white" ? "#0f91d6" : "#fff"}
+					width={20}
+					height={20}
+				/>
 			) : (
 				<></>
 			)}

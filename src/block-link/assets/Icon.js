@@ -1,10 +1,11 @@
 import React from "react";
 
-export const Icon = ({ fill, width }) => {
+export const Icon = ({ fill, width, height = width, ...props }) => {
 	return (
 		<svg
+			{...props}
 			width={width}
-			height={width}
+			height={height}
 			viewBox="0 0 17 17"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"

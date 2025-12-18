@@ -48,8 +48,10 @@ export default function Edit({ attributes, setAttributes }) {
 			</InspectorControls>
 			{withIcon && (
 				<Icon
+					className="icon"
 					fill={blockType === "white" ? "#0f91d6" : "#fff"}
 					width={20}
+					height={20}
 					onChange={(value) => setAttributes({ icon: value })}
 				/>
 			)}
