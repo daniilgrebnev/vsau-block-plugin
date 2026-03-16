@@ -10,6 +10,41 @@ export default function save({ attributes }) {
 					id="switch_arr"
 					className={`block_switch_content_head_container ${blockType}`}
 				>
+					<span className="block_switch_content_head_table_icon">
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<rect
+								x="4"
+								y="6"
+								width="16"
+								height="12"
+								rx="2"
+								ry="2"
+								stroke="currentColor"
+								strokeWidth="1.5"
+							/>
+							<path
+								d="M4 10H20"
+								stroke="currentColor"
+								strokeWidth="1.5"
+							/>
+							<path
+								d="M10 6V18"
+								stroke="currentColor"
+								strokeWidth="1.5"
+							/>
+							<path
+								d="M14 6V18"
+								stroke="currentColor"
+								strokeWidth="1.5"
+							/>
+						</svg>
+					</span>
 					<h2
 						dangerouslySetInnerHTML={{ __html: headText }}
 						className="block_switch_content_head"

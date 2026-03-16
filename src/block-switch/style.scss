@@ -66,6 +66,13 @@ thead {
 	align-items: center;
 	justify-content: flex-start;
 }
+.block_switch_content_head_table_icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 16px;
+	flex-shrink: 0;
+}
 .d-none {
 	display: none !important;
 }

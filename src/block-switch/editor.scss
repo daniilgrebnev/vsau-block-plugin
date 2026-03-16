@@ -2,6 +2,11 @@
 	padding: 30px 50px !important;
 	border-radius: 5px;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 16px;
+	
 }
 
 .block_switch_content_head_container.white {
@@ -15,12 +20,20 @@
 }
 
 .block_switch_content_head {
-	width: 100%;
-	font-size: 20px;
+	font-size: 16px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between !important;
 	margin-top: 0 !important;
+	margin-bottom: 90% !important;
+}
+
+.block_switch_content_head_table_icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 16px;
+	flex-shrink: 0;
 }
 
 .block_switch_content_head_icon {
