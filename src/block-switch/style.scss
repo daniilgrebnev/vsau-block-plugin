@@ -43,6 +43,12 @@ thead {
 	padding: 30px 50px !important;
 	cursor: pointer;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+	transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+	&:hover {
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+		transform: translateY(-1px);
+		background-color: #f8fbff;
+	}
 }
 .block_switch_content_head {
 	width: 100%;
@@ -55,12 +61,22 @@ thead {
 .d-none {
 	display: none !important;
 }
+.block_switch_content_head_icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 16px;
+	transition: transform 0.3s ease;
+}
+.block_switch_content_head_icon.open {
+	transform: rotate(180deg);
+}
+
 #switch_hand {
-	transition: all 0.3s;
-	height: 0;
+	max-height: 0;
 	overflow: hidden;
+	transition: max-height 0.3s ease;
 	&.active {
-		height: 100%;
-		overflow: visible;
+		max-height: 1000px; /* достаточно большое значение для плавного раскрытия */
 	}
 }

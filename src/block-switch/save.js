@@ -10,7 +10,7 @@ export default function save({ attributes }) {
 						dangerouslySetInnerHTML={{ __html: attributes.headText }}
 						className="block_switch_content_head"
 					></h2>
-					<span>
+					<span className="block_switch_content_head_icon">
 						<svg
 							width="20"
 							height="20"
