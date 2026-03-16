@@ -12,15 +12,18 @@ export default function save({ attributes }) {
 					></h2>
 					<span>
 						<svg
-							width="14"
-							height="16"
-							viewBox="0 0 14 16"
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
 							fill="none"
 							xmlns="http://www.w3.org/2000/svg"
 						>
 							<path
-								d="M13.1022 6.68484C14.1404 7.25427 14.1404 8.74573 13.1022 9.31517L2.72135 15.0089C1.72171 15.5572 0.500002 14.8338 0.500002 13.6937L0.500002 2.30629C0.500002 1.16616 1.72171 0.442842 2.72135 0.991129L13.1022 6.68484Z"
-								fill="white"
+								d="M6 9L12 15L18 9"
+								stroke="#0f91d6"
+								strokeWidth="2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
 							/>
 						</svg>
 					</span>
