@@ -25,6 +25,10 @@
       "source": "html",
       "selector": "h2",
       "default": ""
+    },
+    "blockType": {
+      "type": "string",
+      "default": "white"
     }
   },
   "textdomain": "vsau-blocks",

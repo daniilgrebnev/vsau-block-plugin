@@ -1,13 +1,17 @@
 export default function save({ attributes }) {
-	const tableShortcode = `[table id=${attributes.tablePressId.toString()}]`;
+	const { tablePressId, blockType = "white", withHead, headText } = attributes;
+	const tableShortcode = `[table id=${tablePressId.toString()}]`;
 
 	return (
 		<div className="block_switch_content_container">
 			{/* Условный рендеринг для <h2> */}
-			{attributes.withHead && (
-				<div id="switch_arr" className="block_switch_content_head_container">
+			{withHead && (
+				<div
+					id="switch_arr"
+					className={`block_switch_content_head_container ${blockType}`}
+				>
 					<h2
-						dangerouslySetInnerHTML={{ __html: attributes.headText }}
+						dangerouslySetInnerHTML={{ __html: headText }}
 						className="block_switch_content_head"
 					></h2>
 					<span className="block_switch_content_head_icon">
@@ -20,7 +24,7 @@ export default function save({ attributes }) {
 						>
 							<path
 								d="M6 9L12 15L18 9"
-								stroke="#0f91d6"
+								stroke={blockType === "white" ? "#0f91d6" : "#ffffff"}
 								strokeWidth="2"
 								strokeLinecap="round"
 								strokeLinejoin="round"
