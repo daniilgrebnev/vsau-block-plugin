@@ -49,16 +49,35 @@ export default function Edit({ attributes, setAttributes }) {
 				</PanelBody>
 			</InspectorControls>
 
-			<RichText
-				{...useBlockProps({
-					className: `block_switch_content_head ${
-						withHead ? "" : "d-none"
-					}`,
-				})}
-				tagName="h2"
-				value={headText}
-				onChange={(value) => setAttributes({ headText: value })}
-			/>
+			{withHead && (
+				<div
+					className={`block_switch_content_head_container ${blockType}`}
+				>
+					<RichText
+						tagName="h2"
+						className="block_switch_content_head"
+						value={headText}
+						onChange={(value) => setAttributes({ headText: value })}
+					/>
+					<span className="block_switch_content_head_icon">
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M6 9L12 15L18 9"
+								stroke={blockType === "white" ? "#0f91d6" : "#ffffff"}
+								strokeWidth="2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+							/>
+						</svg>
+					</span>
+				</div>
+			)}
 
 			<div>Таблица будет показана на фронтенде</div>
 		</div>
