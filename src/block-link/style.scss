@@ -8,7 +8,7 @@
 	display: flex;
 	transition: all 0.3s;
 	align-items: center;
-	justify-content: start;
+	justify-content: space-between;
 	margin-bottom: 10px;
 	gap: 20px;
 	cursor: pointer;
@@ -32,6 +32,11 @@
 		flex: 0 0 20px;
 		flex-shrink: 0;
 		display: block;
+		order: 2;
+		margin-left: auto;
+	}
+	p {
+		order: 1;
 	}
 	a,
 	input,
