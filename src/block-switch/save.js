@@ -9,6 +9,7 @@ export default function save({ attributes }) {
 				<div
 					id="switch_arr"
 					className={`block_switch_content_head_container ${blockType}`}
+					
 				>
 					
 					<h2
